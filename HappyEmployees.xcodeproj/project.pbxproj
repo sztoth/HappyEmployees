@@ -12,6 +12,12 @@
 		3131F9F61DB7F2570048E55E /* HappyEmployeesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131F9F51DB7F2570048E55E /* HappyEmployeesTests.swift */; };
 		3131FA091DB7F3F40048E55E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA081DB7F3F40048E55E /* main.swift */; };
 		3131FA0B1DB7F4060048E55E /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA0A1DB7F4060048E55E /* Scene.swift */; };
+		3131FA0D1DB7F5D60048E55E /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA0C1DB7F5D60048E55E /* Department.swift */; };
+		3131FA0F1DB7F61B0048E55E /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA0E1DB7F61B0048E55E /* Currency.swift */; };
+		3131FA111DB7F6690048E55E /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA101DB7F6690048E55E /* Wage.swift */; };
+		3131FA131DB7F69C0048E55E /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA121DB7F69C0048E55E /* Employee.swift */; };
+		3131FA151DB7F6D10048E55E /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA141DB7F6D10048E55E /* ExchangeRate.swift */; };
+		3131FA171DB7F6EE0048E55E /* Salary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA161DB7F6EE0048E55E /* Salary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,12 @@
 		3131F9F71DB7F2570048E55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3131FA081DB7F3F40048E55E /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3131FA0A1DB7F4060048E55E /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		3131FA0C1DB7F5D60048E55E /* Department.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
+		3131FA0E1DB7F61B0048E55E /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		3131FA101DB7F6690048E55E /* Wage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
+		3131FA121DB7F69C0048E55E /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		3131FA141DB7F6D10048E55E /* ExchangeRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		3131FA161DB7F6EE0048E55E /* Salary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +158,12 @@
 		3131FA061DB7F3D10048E55E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3131FA0E1DB7F61B0048E55E /* Currency.swift */,
+				3131FA0C1DB7F5D60048E55E /* Department.swift */,
+				3131FA121DB7F69C0048E55E /* Employee.swift */,
+				3131FA141DB7F6D10048E55E /* ExchangeRate.swift */,
+				3131FA161DB7F6EE0048E55E /* Salary.swift */,
+				3131FA101DB7F6690048E55E /* Wage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -262,8 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3131FA0F1DB7F61B0048E55E /* Currency.swift in Sources */,
+				3131FA131DB7F69C0048E55E /* Employee.swift in Sources */,
 				3131FA0B1DB7F4060048E55E /* Scene.swift in Sources */,
+				3131FA171DB7F6EE0048E55E /* Salary.swift in Sources */,
+				3131FA111DB7F6690048E55E /* Wage.swift in Sources */,
 				3131FA091DB7F3F40048E55E /* main.swift in Sources */,
+				3131FA151DB7F6D10048E55E /* ExchangeRate.swift in Sources */,
+				3131FA0D1DB7F5D60048E55E /* Department.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
