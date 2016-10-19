@@ -1,0 +1,73 @@
+{
+  "total_items": 6,
+  "page": 1,
+  "page_size": 30,
+  "items": [
+    {
+      "first_name": "Joan",
+      "last_name": "Smith",
+      "section": "Sales",
+      "currency": "USD",
+      "salary": {
+        "currency": "AUD",
+        "amount": 35000.00,
+        "display_amount": "AUD 35,000.00"
+      }
+    },
+    {
+      "first_name": "Dan",
+      "last_name": "White",
+      "section": "Administration",
+      "currency": "AUD",
+      "salary": {
+        "currency": "AUD",
+        "amount": 25000.00,
+        "display_amount": "AUD 25,000.00"
+      }
+    },
+    {
+      "first_name": "Billy",
+      "last_name": "Davis",
+      "section": "Warehouse",
+      "currency": "AUD",
+      "salary": {
+        "currency": "AUD",
+        "amount": 15000.00,
+        "display_amount": "AUD 15,000.00"
+      }
+    },
+    {
+      "first_name": "Jenny",
+      "last_name": "Black",
+      "section": "Logistics",
+      "currency": "AUD",
+      "salary": {
+        "currency": "AUD",
+        "amount": 15000.00,
+        "display_amount": "AUD  15,000.00"
+      }
+    },
+    {
+      "first_name": "Peter",
+      "last_name": "Brown",
+      "section": "Sales",
+      "currency": "AUD",
+      "salary": {
+        "currency": "AUD",
+        "amount": 35000.00,
+        "display_amount": "AUD 35,000.00"
+      }
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Day",
+      "section": "Sales",
+      "currency": "SGD",
+      "salary": {
+        "currency": "AUD",
+        "amount": 40000.00,
+        "display_amount": "AUD 40,000.00"
+      }
+    }
+  ]
+}

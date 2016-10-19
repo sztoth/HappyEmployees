@@ -1,0 +1,23 @@
+{
+  "total_items": 4,
+  "page": 1,
+  "page_size": 30,
+  "items": [
+    {
+      "currency": "AUD",
+      "rate": 1.00
+    },
+    {
+      "currency": "GBP",
+      "rate": 1.69303
+    },
+    {
+      "currency": "SGD",
+      "rate": 0.957206
+    },
+    {
+      "currency": "USD",
+      "rate": 1.30470
+    }
+  ]
+}

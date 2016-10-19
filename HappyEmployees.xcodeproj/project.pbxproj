@@ -18,6 +18,11 @@
 		3131FA131DB7F69C0048E55E /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA121DB7F69C0048E55E /* Employee.swift */; };
 		3131FA151DB7F6D10048E55E /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA141DB7F6D10048E55E /* ExchangeRate.swift */; };
 		3131FA171DB7F6EE0048E55E /* Salary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA161DB7F6EE0048E55E /* Salary.swift */; };
+		3131FA191DB7F7650048E55E /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA181DB7F7650048E55E /* Input.swift */; };
+		3131FA1B1DB7F8050048E55E /* DefaultFileInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA1A1DB7F8050048E55E /* DefaultFileInput.swift */; };
+		3131FA201DB7F86E0048E55E /* employees.json in Resources */ = {isa = PBXBuildFile; fileRef = 3131FA1E1DB7F86E0048E55E /* employees.json */; };
+		3131FA211DB7F86E0048E55E /* exchange_rates.json in Resources */ = {isa = PBXBuildFile; fileRef = 3131FA1F1DB7F86E0048E55E /* exchange_rates.json */; };
+		3131FA231DB7F88F0048E55E /* Bundle+HPY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA221DB7F88F0048E55E /* Bundle+HPY.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		3131FA121DB7F69C0048E55E /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		3131FA141DB7F6D10048E55E /* ExchangeRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		3131FA161DB7F6EE0048E55E /* Salary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salary.swift; sourceTree = "<group>"; };
+		3131FA181DB7F7650048E55E /* Input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		3131FA1A1DB7F8050048E55E /* DefaultFileInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultFileInput.swift; sourceTree = "<group>"; };
+		3131FA1E1DB7F86E0048E55E /* employees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employees.json; sourceTree = "<group>"; };
+		3131FA1F1DB7F86E0048E55E /* exchange_rates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exchange_rates.json; sourceTree = "<group>"; };
+		3131FA221DB7F88F0048E55E /* Bundle+HPY.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+HPY.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +147,8 @@
 		3131FA031DB7F3D10048E55E /* Input */ = {
 			isa = PBXGroup;
 			children = (
+				3131FA1A1DB7F8050048E55E /* DefaultFileInput.swift */,
+				3131FA181DB7F7650048E55E /* Input.swift */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -151,6 +163,8 @@
 		3131FA051DB7F3D10048E55E /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				3131FA1C1DB7F86E0048E55E /* Extensions */,
+				3131FA1D1DB7F86E0048E55E /* Files */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -173,6 +187,23 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3131FA1C1DB7F86E0048E55E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3131FA221DB7F88F0048E55E /* Bundle+HPY.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3131FA1D1DB7F86E0048E55E /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				3131FA1E1DB7F86E0048E55E /* employees.json */,
+				3131FA1F1DB7F86E0048E55E /* exchange_rates.json */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +292,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3131FA211DB7F86E0048E55E /* exchange_rates.json in Resources */,
 				3131F9EB1DB7F2570048E55E /* LaunchScreen.storyboard in Resources */,
+				3131FA201DB7F86E0048E55E /* employees.json in Resources */,
 				3131F9E81DB7F2570048E55E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,9 +316,12 @@
 				3131FA0F1DB7F61B0048E55E /* Currency.swift in Sources */,
 				3131FA131DB7F69C0048E55E /* Employee.swift in Sources */,
 				3131FA0B1DB7F4060048E55E /* Scene.swift in Sources */,
+				3131FA231DB7F88F0048E55E /* Bundle+HPY.swift in Sources */,
 				3131FA171DB7F6EE0048E55E /* Salary.swift in Sources */,
 				3131FA111DB7F6690048E55E /* Wage.swift in Sources */,
 				3131FA091DB7F3F40048E55E /* main.swift in Sources */,
+				3131FA1B1DB7F8050048E55E /* DefaultFileInput.swift in Sources */,
+				3131FA191DB7F7650048E55E /* Input.swift in Sources */,
 				3131FA151DB7F6D10048E55E /* ExchangeRate.swift in Sources */,
 				3131FA0D1DB7F5D60048E55E /* Department.swift in Sources */,
 			);
