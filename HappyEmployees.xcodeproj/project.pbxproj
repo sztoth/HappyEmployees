@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3131F9E81DB7F2570048E55E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3131F9E71DB7F2570048E55E /* Assets.xcassets */; };
 		3131F9EB1DB7F2570048E55E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3131F9E91DB7F2570048E55E /* LaunchScreen.storyboard */; };
-		3131F9F61DB7F2570048E55E /* HappyEmployeesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131F9F51DB7F2570048E55E /* HappyEmployeesTests.swift */; };
 		3131FA091DB7F3F40048E55E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA081DB7F3F40048E55E /* main.swift */; };
 		3131FA0B1DB7F4060048E55E /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA0A1DB7F4060048E55E /* Scene.swift */; };
 		3131FA0D1DB7F5D60048E55E /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA0C1DB7F5D60048E55E /* Department.swift */; };
@@ -36,6 +35,14 @@
 		3131FA3F1DB80E450048E55E /* DispatchGroup+HPY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA3E1DB80E450048E55E /* DispatchGroup+HPY.swift */; };
 		3131FA411DB810630048E55E /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA401DB810630048E55E /* CurrencyConverter.swift */; };
 		3131FA431DB8115F0048E55E /* Double+HPY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA421DB8115F0048E55E /* Double+HPY.swift */; };
+		3131FA4B1DB8155D0048E55E /* DefaultFileInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA4A1DB8155D0048E55E /* DefaultFileInputTests.swift */; };
+		3131FA4D1DB817830048E55E /* DataLoaderFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA4C1DB817830048E55E /* DataLoaderFactoryTests.swift */; };
+		3131FA4F1DB817E80048E55E /* FileLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA4E1DB817E80048E55E /* FileLoaderTests.swift */; };
+		3131FA531DB81AE90048E55E /* Double-HPY-Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA521DB81AE90048E55E /* Double-HPY-Tests.swift */; };
+		3131FA561DB81CB60048E55E /* EmployeeResourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA551DB81CB60048E55E /* EmployeeResourceTests.swift */; };
+		3131FA581DB81CD40048E55E /* MockLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA571DB81CD40048E55E /* MockLoader.swift */; };
+		3131FA5A1DB81F020048E55E /* ExchangeRateResourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA591DB81F020048E55E /* ExchangeRateResourceTests.swift */; };
+		3131FA5C1DB820710048E55E /* PayrollAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA5B1DB820710048E55E /* PayrollAppTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +61,6 @@
 		3131F9EA1DB7F2570048E55E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3131F9EC1DB7F2570048E55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3131F9F11DB7F2570048E55E /* HappyEmployeesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyEmployeesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3131F9F51DB7F2570048E55E /* HappyEmployeesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyEmployeesTests.swift; sourceTree = "<group>"; };
 		3131F9F71DB7F2570048E55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3131FA081DB7F3F40048E55E /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3131FA0A1DB7F4060048E55E /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
@@ -82,6 +88,14 @@
 		3131FA3E1DB80E450048E55E /* DispatchGroup+HPY.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchGroup+HPY.swift"; sourceTree = "<group>"; };
 		3131FA401DB810630048E55E /* CurrencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
 		3131FA421DB8115F0048E55E /* Double+HPY.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+HPY.swift"; sourceTree = "<group>"; };
+		3131FA4A1DB8155D0048E55E /* DefaultFileInputTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultFileInputTests.swift; sourceTree = "<group>"; };
+		3131FA4C1DB817830048E55E /* DataLoaderFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoaderFactoryTests.swift; sourceTree = "<group>"; };
+		3131FA4E1DB817E80048E55E /* FileLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoaderTests.swift; sourceTree = "<group>"; };
+		3131FA521DB81AE90048E55E /* Double-HPY-Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double-HPY-Tests.swift"; sourceTree = "<group>"; };
+		3131FA551DB81CB60048E55E /* EmployeeResourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeResourceTests.swift; sourceTree = "<group>"; };
+		3131FA571DB81CD40048E55E /* MockLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLoader.swift; sourceTree = "<group>"; };
+		3131FA591DB81F020048E55E /* ExchangeRateResourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateResourceTests.swift; sourceTree = "<group>"; };
+		3131FA5B1DB820710048E55E /* PayrollAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayrollAppTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +151,8 @@
 		3131F9F41DB7F2570048E55E /* HappyEmployeesTests */ = {
 			isa = PBXGroup;
 			children = (
-				3131F9F51DB7F2570048E55E /* HappyEmployeesTests.swift */,
+				3131FA441DB814450048E55E /* SharedMocks */,
+				3131FA451DB814450048E55E /* Tests */,
 				3131F9F71DB7F2570048E55E /* Info.plist */,
 			);
 			path = HappyEmployeesTests;
@@ -253,6 +268,84 @@
 			path = Loader;
 			sourceTree = "<group>";
 		};
+		3131FA441DB814450048E55E /* SharedMocks */ = {
+			isa = PBXGroup;
+			children = (
+				3131FA571DB81CD40048E55E /* MockLoader.swift */,
+			);
+			path = SharedMocks;
+			sourceTree = "<group>";
+		};
+		3131FA451DB814450048E55E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3131FA461DB814AD0048E55E /* Controllers */,
+				3131FA501DB81ABE0048E55E /* Misc */,
+				3131FA541DB81C9E0048E55E /* Resources */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3131FA461DB814AD0048E55E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3131FA471DB814AD0048E55E /* App */,
+				3131FA481DB814AD0048E55E /* Input */,
+				3131FA491DB814AD0048E55E /* Loader */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3131FA471DB814AD0048E55E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3131FA5B1DB820710048E55E /* PayrollAppTests.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3131FA481DB814AD0048E55E /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				3131FA4A1DB8155D0048E55E /* DefaultFileInputTests.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		3131FA491DB814AD0048E55E /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				3131FA4C1DB817830048E55E /* DataLoaderFactoryTests.swift */,
+				3131FA4E1DB817E80048E55E /* FileLoaderTests.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		3131FA501DB81ABE0048E55E /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				3131FA511DB81ABE0048E55E /* Extensions */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		3131FA511DB81ABE0048E55E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3131FA521DB81AE90048E55E /* Double-HPY-Tests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3131FA541DB81C9E0048E55E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3131FA551DB81CB60048E55E /* EmployeeResourceTests.swift */,
+				3131FA591DB81F020048E55E /* ExchangeRateResourceTests.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -310,6 +403,7 @@
 					3131F9F01DB7F2570048E55E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = Q4WE9YHXDQ;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3131F9DC1DB7F2570048E55E;
 					};
@@ -391,7 +485,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3131F9F61DB7F2570048E55E /* HappyEmployeesTests.swift in Sources */,
+				3131FA4B1DB8155D0048E55E /* DefaultFileInputTests.swift in Sources */,
+				3131FA561DB81CB60048E55E /* EmployeeResourceTests.swift in Sources */,
+				3131FA581DB81CD40048E55E /* MockLoader.swift in Sources */,
+				3131FA4F1DB817E80048E55E /* FileLoaderTests.swift in Sources */,
+				3131FA531DB81AE90048E55E /* Double-HPY-Tests.swift in Sources */,
+				3131FA5A1DB81F020048E55E /* ExchangeRateResourceTests.swift in Sources */,
+				3131FA4D1DB817830048E55E /* DataLoaderFactoryTests.swift in Sources */,
+				3131FA5C1DB820710048E55E /* PayrollAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,11 +643,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Q4WE9YHXDQ;
 				INFOPLIST_FILE = HappyEmployeesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iszabi.HappyEmployeesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappyEmployees.app/HappyEmployees";
 			};
@@ -557,6 +660,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Q4WE9YHXDQ;
 				INFOPLIST_FILE = HappyEmployeesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
