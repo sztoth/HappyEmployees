@@ -33,6 +33,9 @@
 		3131FA391DB806CB0048E55E /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA381DB806CB0048E55E /* Resource.swift */; };
 		3131FA3B1DB808430048E55E /* EmployeeResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA3A1DB808430048E55E /* EmployeeResource.swift */; };
 		3131FA3D1DB8095F0048E55E /* ExchangeRateResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA3C1DB8095F0048E55E /* ExchangeRateResource.swift */; };
+		3131FA3F1DB80E450048E55E /* DispatchGroup+HPY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA3E1DB80E450048E55E /* DispatchGroup+HPY.swift */; };
+		3131FA411DB810630048E55E /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA401DB810630048E55E /* CurrencyConverter.swift */; };
+		3131FA431DB8115F0048E55E /* Double+HPY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA421DB8115F0048E55E /* Double+HPY.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		3131FA381DB806CB0048E55E /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		3131FA3A1DB808430048E55E /* EmployeeResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeResource.swift; sourceTree = "<group>"; };
 		3131FA3C1DB8095F0048E55E /* ExchangeRateResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateResource.swift; sourceTree = "<group>"; };
+		3131FA3E1DB80E450048E55E /* DispatchGroup+HPY.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchGroup+HPY.swift"; sourceTree = "<group>"; };
+		3131FA401DB810630048E55E /* CurrencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		3131FA421DB8115F0048E55E /* Double+HPY.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+HPY.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,7 @@
 			children = (
 				3131FA1C1DB7F86E0048E55E /* Extensions */,
 				3131FA1D1DB7F86E0048E55E /* Files */,
+				3131FA401DB810630048E55E /* CurrencyConverter.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -221,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				3131FA221DB7F88F0048E55E /* Bundle+HPY.swift */,
+				3131FA3E1DB80E450048E55E /* DispatchGroup+HPY.swift */,
+				3131FA421DB8115F0048E55E /* Double+HPY.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -352,10 +361,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3131FA0F1DB7F61B0048E55E /* Currency.swift in Sources */,
+				3131FA3F1DB80E450048E55E /* DispatchGroup+HPY.swift in Sources */,
 				3131FA131DB7F69C0048E55E /* Employee.swift in Sources */,
 				3131FA331DB7FEF80048E55E /* FileLoader.swift in Sources */,
 				3131FA0B1DB7F4060048E55E /* Scene.swift in Sources */,
 				3131FA291DB7FBE70048E55E /* PayrollApp.swift in Sources */,
+				3131FA411DB810630048E55E /* CurrencyConverter.swift in Sources */,
 				3131FA231DB7F88F0048E55E /* Bundle+HPY.swift in Sources */,
 				3131FA311DB7FEA30048E55E /* DataLoader.swift in Sources */,
 				3131FA251DB7F9AD0048E55E /* Output.swift in Sources */,
@@ -367,6 +378,7 @@
 				3131FA391DB806CB0048E55E /* Resource.swift in Sources */,
 				3131FA3B1DB808430048E55E /* EmployeeResource.swift in Sources */,
 				3131FA271DB7F9C80048E55E /* DefaultConsoleOutput.swift in Sources */,
+				3131FA431DB8115F0048E55E /* Double+HPY.swift in Sources */,
 				3131FA091DB7F3F40048E55E /* main.swift in Sources */,
 				3131FA1B1DB7F8050048E55E /* DefaultFileInput.swift in Sources */,
 				3131FA191DB7F7650048E55E /* Input.swift in Sources */,

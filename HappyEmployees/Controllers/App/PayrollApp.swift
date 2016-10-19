@@ -31,13 +31,55 @@ extension PayrollApp {
         }
 
         let employeeResource = EmployeeResource()
-        employeeResource.fetch(fromLoader: employeeLoader) { employees in
-            print("Employees: \(employees)")
+        let exchangeRateResource = ExchangeRateResource()
+        let executionGroup = DispatchGroup()
+
+        var employees: [Employee]?
+        var exchangeRates: [ExchangeRate]?
+
+        executionGroup.enter()
+        employeeResource.fetch(fromLoader: employeeLoader) { employeeList in
+            employees = employeeList
+            executionGroup.leave()
         }
 
-        let exchangeRateResource = ExchangeRateResource()
-        exchangeRateResource.fetch(fromLoader: exchangeRateLoader) { exchangeRates in
-            print("Exchange rates: \(exchangeRates)")
+        executionGroup.enter()
+        exchangeRateResource.fetch(fromLoader: exchangeRateLoader) { exchangeRateList in
+            exchangeRates = exchangeRateList
+            executionGroup.leave()
         }
+
+        executionGroup.performWhenFinished { 
+            guard let employees = employees, let exchangeRates = exchangeRates else {
+                output.onPayrollGenerated(salaries: [])
+                return
+            }
+
+            let salaries = self.processSalaries(forEmployees: employees, withExchangeRates: exchangeRates)
+            output.onPayrollGenerated(salaries: salaries)
+        }
+    }
+}
+
+// MARK: - Calculation
+
+fileprivate extension PayrollApp {
+    func processSalaries(forEmployees employess: [Employee], withExchangeRates rates: [ExchangeRate]) -> [Salary] {
+        let converter = CurrencyConverter(rates: rates, baseCurrency: .aud)
+
+        var salaries = [Salary]()
+        for (_, employee) in employess.enumerated() {
+            let monthlyCurrency = employee.requestedCurrency
+            let monthlyAmount = employee.annualWage.amount / 12.0
+            guard let convertedAmount = converter.convert(amountInBaseCurrency: monthlyAmount, toAmountInCurrency: monthlyCurrency) else {
+                return []
+            }
+
+            let monthlySalary = "\(monthlyCurrency.rawValue) \(convertedAmount.stringValue())"
+            let salary = Salary(employeeName: employee.fullName, monthlySalary: monthlySalary)
+            salaries.append(salary)
+        }
+
+        return salaries
     }
 }

@@ -16,6 +16,14 @@ struct Employee {
     let annualWage: Wage
 }
 
+// MARK: - Helper method
+
+extension Employee {
+    var fullName: String {
+        return "\(firstName) \(lastName)"
+    }
+}
+
 // MARK: - Decodable protocol
 
 extension Employee: Decodable {
