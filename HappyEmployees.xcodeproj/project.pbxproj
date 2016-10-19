@@ -26,6 +26,8 @@
 		3131FA251DB7F9AD0048E55E /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA241DB7F9AD0048E55E /* Output.swift */; };
 		3131FA271DB7F9C80048E55E /* DefaultConsoleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA261DB7F9C80048E55E /* DefaultConsoleOutput.swift */; };
 		3131FA291DB7FBE70048E55E /* PayrollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA281DB7FBE70048E55E /* PayrollApp.swift */; };
+		3131FA311DB7FEA30048E55E /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA301DB7FEA30048E55E /* DataLoader.swift */; };
+		3131FA331DB7FEF80048E55E /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA321DB7FEF80048E55E /* FileLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		3131FA241DB7F9AD0048E55E /* Output.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
 		3131FA261DB7F9C80048E55E /* DefaultConsoleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultConsoleOutput.swift; sourceTree = "<group>"; };
 		3131FA281DB7FBE70048E55E /* PayrollApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayrollApp.swift; sourceTree = "<group>"; };
+		3131FA301DB7FEA30048E55E /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		3131FA321DB7FEF80048E55E /* FileLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 			children = (
 				3131FA021DB7F3D10048E55E /* App */,
 				3131FA031DB7F3D10048E55E /* Input */,
+				3131FA2F1DB7FE560048E55E /* Loader */,
 				3131FA041DB7F3D10048E55E /* Output */,
 			);
 			path = Controllers;
@@ -213,6 +218,15 @@
 				3131FA1F1DB7F86E0048E55E /* exchange_rates.json */,
 			);
 			path = Files;
+			sourceTree = "<group>";
+		};
+		3131FA2F1DB7FE560048E55E /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				3131FA301DB7FEA30048E55E /* DataLoader.swift */,
+				3131FA321DB7FEF80048E55E /* FileLoader.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,9 +338,11 @@
 			files = (
 				3131FA0F1DB7F61B0048E55E /* Currency.swift in Sources */,
 				3131FA131DB7F69C0048E55E /* Employee.swift in Sources */,
+				3131FA331DB7FEF80048E55E /* FileLoader.swift in Sources */,
 				3131FA0B1DB7F4060048E55E /* Scene.swift in Sources */,
 				3131FA291DB7FBE70048E55E /* PayrollApp.swift in Sources */,
 				3131FA231DB7F88F0048E55E /* Bundle+HPY.swift in Sources */,
+				3131FA311DB7FEA30048E55E /* DataLoader.swift in Sources */,
 				3131FA251DB7F9AD0048E55E /* Output.swift in Sources */,
 				3131FA171DB7F6EE0048E55E /* Salary.swift in Sources */,
 				3131FA111DB7F6690048E55E /* Wage.swift in Sources */,

@@ -20,7 +20,7 @@ class DefaultFileInput {
 
 extension DefaultFileInput: Input {
     func getEmployeesEndpoint() -> String? {
-        return bundle.url(forJSONFileResource: "employess")?.absoluteString
+        return bundle.url(forJSONFileResource: "employees")?.absoluteString
     }
 
     func getExchangeRateEndpoint() -> String? {
