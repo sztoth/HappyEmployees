@@ -10,6 +10,8 @@ import Foundation
 
 // This protocol can be used for a future network load option too.
 protocol DataLoader {
+    static func canHandle(path: String) -> Bool
+
     init(path: String)
     func load(completion: @escaping (Data?) -> ())
 }

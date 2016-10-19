@@ -14,13 +14,15 @@ class PayrollApp {}
 
 extension PayrollApp {
     func generatePayroll(withDataFrom input: Input, sendResultTo output: Output) {
-        guard let employeePath = input.getEmployeesEndpoint() else {
+        guard
+            let employeePath = input.getEmployeesEndpoint(),
+            let employeeLoader = DataLoaderFactory.loader(forPath: employeePath)
+        else {
             output.onPayrollGenerated(salaries: [])
             return
         }
 
-        let fileLoader = FileLoader(path: employeePath)
-        fileLoader.load { (data) in
+        employeeLoader.load { (data) in
             print("Data: \(data)")
         }
     }

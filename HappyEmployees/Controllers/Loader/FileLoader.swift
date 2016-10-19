@@ -16,7 +16,13 @@ class FileLoader {
     }
 }
 
+// MARK: - DataLoader protocol
+
 extension FileLoader: DataLoader {
+    static func canHandle(path: String) -> Bool {
+        return path.hasPrefix("file:///")
+    }
+
     func load(completion: @escaping (Data?) -> ()) {
         DispatchQueue.global().async {
             guard let url = URL(string: self.path), let data = try? Data(contentsOf: url) else {

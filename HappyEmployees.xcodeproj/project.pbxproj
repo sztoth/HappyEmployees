@@ -28,6 +28,7 @@
 		3131FA291DB7FBE70048E55E /* PayrollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA281DB7FBE70048E55E /* PayrollApp.swift */; };
 		3131FA311DB7FEA30048E55E /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA301DB7FEA30048E55E /* DataLoader.swift */; };
 		3131FA331DB7FEF80048E55E /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA321DB7FEF80048E55E /* FileLoader.swift */; };
+		3131FA351DB801340048E55E /* DataLoaderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131FA341DB801340048E55E /* DataLoaderFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		3131FA281DB7FBE70048E55E /* PayrollApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayrollApp.swift; sourceTree = "<group>"; };
 		3131FA301DB7FEA30048E55E /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		3131FA321DB7FEF80048E55E /* FileLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		3131FA341DB801340048E55E /* DataLoaderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoaderFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				3131FA301DB7FEA30048E55E /* DataLoader.swift */,
+				3131FA341DB801340048E55E /* DataLoaderFactory.swift */,
 				3131FA321DB7FEF80048E55E /* FileLoader.swift */,
 			);
 			path = Loader;
@@ -345,6 +348,7 @@
 				3131FA311DB7FEA30048E55E /* DataLoader.swift in Sources */,
 				3131FA251DB7F9AD0048E55E /* Output.swift in Sources */,
 				3131FA171DB7F6EE0048E55E /* Salary.swift in Sources */,
+				3131FA351DB801340048E55E /* DataLoaderFactory.swift in Sources */,
 				3131FA111DB7F6690048E55E /* Wage.swift in Sources */,
 				3131FA271DB7F9C80048E55E /* DefaultConsoleOutput.swift in Sources */,
 				3131FA091DB7F3F40048E55E /* main.swift in Sources */,
