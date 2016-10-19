@@ -8,10 +8,14 @@
 
 import UIKit
 
-class Scene: NSObject {}
+class Scene: NSObject {
+    fileprivate let payrollApp = PayrollApp()
+}
 
 extension Scene: UIApplicationDelegate {
     func applicationDidFinishLaunching(_ application: UIApplication) {
-        
+        let input = DefaultFileInput()
+        let output = DefaultConsoleOutput()
+        payrollApp.generatePayroll(withDataFrom: input, sendResultTo: output)
     }
 }
