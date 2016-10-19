@@ -22,8 +22,22 @@ extension PayrollApp {
             return
         }
 
-        employeeLoader.load { (data) in
-            print("Data: \(data)")
+        guard
+            let exchangeRatePath = input.getExchangeRateEndpoint(),
+            let exchangeRateLoader = DataLoaderFactory.loader(forPath: exchangeRatePath)
+        else {
+            output.onPayrollGenerated(salaries: [])
+            return
+        }
+
+        let employeeResource = EmployeeResource()
+        employeeResource.fetch(fromLoader: employeeLoader) { employees in
+            print("Employees: \(employees)")
+        }
+
+        let exchangeRateResource = ExchangeRateResource()
+        exchangeRateResource.fetch(fromLoader: exchangeRateLoader) { exchangeRates in
+            print("Exchange rates: \(exchangeRates)")
         }
     }
 }

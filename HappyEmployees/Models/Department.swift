@@ -14,3 +14,12 @@ enum Department: String {
     case warehouse = "Warehouse"
     case logistics = "Logistics"
 }
+
+// MARK: - Custom init
+
+extension Department {
+    init?(string: String?) {
+        guard let string = string, let department = Department(rawValue: string) else { return nil }
+        self = department
+    }
+}

@@ -13,3 +13,12 @@ enum Currency: String {
     case usd = "USD"
     case sgd = "SGD"
 }
+
+// MARK: - Custom init
+
+extension Currency {
+    init?(string: String?) {
+        guard let string = string, let currency = Currency(rawValue: string) else { return nil }
+        self = currency
+    }
+}

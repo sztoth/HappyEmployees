@@ -12,3 +12,20 @@ struct Wage {
     let amount: Double
     let currency: Currency
 }
+
+// MARK: - Decodable protocol
+
+extension Wage: Decodable {
+    init?(dictionary: [String : AnyObject]) {
+        guard
+            let amount = dictionary["amount"] as? NSNumber,
+            let currency = Currency(string: dictionary["currency"] as? String)
+        else {
+            return nil
+        }
+
+        self.amount = amount.doubleValue
+        self.currency = currency
+    }
+}
+
